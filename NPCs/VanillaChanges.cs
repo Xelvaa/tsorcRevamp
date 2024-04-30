@@ -600,13 +600,19 @@ namespace tsorcRevamp.NPCs
                     }
                 case (NPCID.GiantFlyingAntlion):
                     {
-                        npc.value = 420;
+                        npc.damage = 32;
+                        npc.lifeMax = 100;
+                        npc.defense = 14;
+                        npc.value = 430;
                         break;
                     }
 
                 case (NPCID.FlyingAntlion):
                     {
-                        npc.value = 370;
+                        npc.damage = 32;
+                        npc.lifeMax = 80;
+                        npc.defense = 10;
+                        npc.value = 420;
                         break;
                     }
 
@@ -2209,7 +2215,7 @@ namespace tsorcRevamp.NPCs
                     {
                         npc.GetGlobalNPC<tsorcRevampGlobalNPC>().DespawnHandler = new NPCDespawnHandler(LangUtils.GetTextValue("NPCs.DukeFishron.DespawnHandler"), Color.Cyan, DustID.Clentaminator_Cyan);
 
-                        npc.lifeMax = 140000;
+                        npc.lifeMax = 120000;
                         npc.damage = 125;
                         npc.value = 306660;
                         break;
@@ -2231,8 +2237,8 @@ namespace tsorcRevamp.NPCs
                 #region Golem
                 case (NPCID.Golem): //35k souls total
                     {
-                        npc.lifeMax = 100000; //base 15k
-                        npc.defense = 50; //base 26
+                        npc.lifeMax = 60000; //base 15k
+                        npc.defense = 40; //base 26
                         npc.damage = 100; //base 72
                         npc.value = 293650;
                         npc.buffImmune[BuffID.CursedInferno] = true;
@@ -2244,8 +2250,8 @@ namespace tsorcRevamp.NPCs
                     {
                         npc.GetGlobalNPC<tsorcRevampGlobalNPC>().DespawnHandler = new NPCDespawnHandler(LangUtils.GetTextValue("NPCs.Golem.DespawnHandler"), Color.OrangeRed, DustID.OrangeTorch);
 
-                        npc.lifeMax = 50000; //base 25k
-                        npc.defense = 25; //base 20
+                        npc.lifeMax = 40000; //base 25k
+                        npc.defense = 30; //base 20
                         //npc.damage = 64; //base 64, 80 when freed
                         npc.value = 24500;
                         npc.buffImmune[BuffID.CursedInferno] = true;
@@ -2287,7 +2293,7 @@ namespace tsorcRevamp.NPCs
                         {
                             npc.GetGlobalNPC<tsorcRevampGlobalNPC>().DespawnHandler = new NPCDespawnHandler(LangUtils.GetTextValue("NPCs.EmpressOfLight.DespawnHandler"), Color.Gold, DustID.RainbowTorch);
                         }
-                        npc.lifeMax = 200000;
+                        npc.lifeMax = 142000;
                         npc.value = 444440;
                         break;
                     }
@@ -2456,7 +2462,7 @@ namespace tsorcRevamp.NPCs
                         {
                             npc.damage = 40;
                             npc.defense = 15;
-                            npc.lifeMax = 180;
+                            npc.lifeMax = 150;
                             npc.knockBackResist = 0f;
                         }
                         if (npc.type == NPCID.GoblinSorcerer)
