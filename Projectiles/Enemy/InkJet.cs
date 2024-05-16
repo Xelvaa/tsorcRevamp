@@ -44,7 +44,7 @@ namespace tsorcRevamp.Projectiles.Enemy
 
             target.AddBuff(BuffID.BrokenArmor, 180 / buffLengthMod, false);
             target.AddBuff(BuffID.Blackout, 600 / buffLengthMod, false);
-            target.AddBuff(BuffID.Venom, 600 / buffLengthMod, false);
+            target.AddBuff(BuffID.Venom, 300 / buffLengthMod, false);
             target.AddBuff(BuffID.Obstructed, 120 / buffLengthMod, false);
         }
 
